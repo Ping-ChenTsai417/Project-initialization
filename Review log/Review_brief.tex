@@ -1,0 +1,158 @@
+\documentclass[conference,compsoc]{IEEEtran}
+
+\usepackage{comment}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\setlength{\parskip}{1em}
+\usepackage{microtype} %solve badbox
+\usepackage[colorlinks=true,citecolor= blue, bookmarks=true,
+linktocpage=true, % makes the page number as hyperlink in table of content
+]
+{hyperref}
+
+% Bibliography packages
+\usepackage[
+	style=ieee,
+  	url=false,
+  	doi=false,
+  	isbn=false,
+  	citestyle=numeric-comp,
+  	bibencoding=utf8,
+  	backend=biber]{biblatex}
+
+\addbibresource{bibliography.bib} % database
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Fall Risk Reduction in Cognitively Impaired Elderly \\using Brain-Computer Interface: \\A Review}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Ping-Chen Tsai}
+\IEEEauthorblockA{Department of Electrical Engineering and Electronics\\
+University of Liverpool\\
+Liverpool, L66DH\\
+Email: PingChen@liverpool.ac.uk}}
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+Decades of research and experimental studies have investigated strategies to reduce older people fall risk. The electrophysiological signal, electroencephalogram (EEG),  is a strong basis of brain-computer interface (BCI) for clinical interpretation \cite{Panoulas_2010,Mane_2020}. EEG correlates with human intention \cite{Panoulas_2010}.
+\end{abstract}
+
+\keywords{Brain Computer Interface, Cognitive function, fall risk assessment, motor rehabilitation}
+
+\IEEEpeerreviewmaketitle
+
+
+\section{Introduction}
+% no \IEEEPARstart
+Most BCI applications involves assistive technology that help the disabled people with motor movement or communication to improve their well beings\cite{Kubler_2006}
+
+\subsection{Risk of fall assessment}
+% a bit intro
+Falls in ageing population is a rising public health problem globally. People aged over 65 years are entitled to higher risk of unintentional fall than younger adults and children, leading to fall-related injuries or even as severe as death \cite{who_2012}. Among fall-experienced elderly, those who residing at home, geriatric patients and inpatients adults are the majority \cite{Jung_2014}. In addition to fall-induced immobility that limits their daily activity, falls pose negative psychosocial effects on elderly such as dependence and social isolation \cite{Scheffer_2008}. Falling injuries also requires clinical interventions, bringing high financial burden to their family. 
+% fall risk assessment
+To prevent fall of older people, World Health Organization (WHO) effective fall prevention strategies start by exploring variable risk factors and thus develop related healthcare training as well as safer environment to reduce the possibilities for falls \cite{who_2012}. 
+
+Risk factors for falling varies, hence fall risks assessment tools are widely studied and used for more efficient diagnosis for falls. The accuracy and validity of risk assessment tools should be either tested or supported by evidence before putting in use by patients. As early as 1981, one of the first fall risk assessment tool was established based on incident report data \cite{Oulton_1981}. Later, various assessment tool with quantitative indication of fall risk were developed such as Downton scale, the St. Thomas Risk Assessment Tool in falling elderly inpatients(STRATIFY, effective for acute hospital \cite{Perell_2001})(lists of tools reference see \cite{Aranda_Gallardo_2013}). In the last decade, most the emerging fall risk assessment tools were developed by retrospective case-control study to identify fall risk factors. These tools diverse across settings such as in the low-level care facility\cite{van_Schooten_2020}, geriatric care units\cite{Michalcova_2020} and acute care hospital \cite{Chiu_2014, Aryee_2017}. Other assessment tools are introduced by multi-factorial statistical approach that incorporate elders' gait performance and cognitive impairment to rate fall risks \cite{Kikkert_2017,Taylor_2018}. 
+The environment and human physical as well as mental status when fall prone to happen offers clues to specific factors for fall. Hence appropriate selection of risk assessment tool can lead to effective fall prevention intervention. \textbf{XXX number of the reviewed articles validated the tools, or supply literature evidence for the tools' reliability \cite{Myers_2003}}.
+
+Popular interventions for fall prevention strategies for older people includes living environmental modification, muscle strengthening training programme such as Tai-Chi exercises, and hiring assistive devices to treat impaired sensory functions \cite{who_2012}. (Do we need this section?)
+%BCI is to enhance neurological function is one of the intervention?
+
+\subsection{Correlation between cognitive decline and risk fall (strong or loose)}
+
+
+\subsection{Using BCI to reduce cognitive decline}
+
+\subsection{Using BCI to reduce risk of fall}
+
+\section{Method}
+\section{Search Strategy}
+\section{Study selection}
+Literature selection criteria should prevent bias and errors as much as possible. In this section, state how you exclude bias.
+\section{Analysis}
+
+\section{Quality assessment for the Selected Studies}
+
+
+
+
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+
+
+% conference papers do not normally have an appendix
+
+
+
+% use section* for acknowledgment
+\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+  \section*{Acknowledgments}
+\else
+  % regular IEEE prefers the singular form
+  \section*{Acknowledgment}
+\fi
+
+The authors would like to thank...
+
+
+\printbibliography
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\end{document}
