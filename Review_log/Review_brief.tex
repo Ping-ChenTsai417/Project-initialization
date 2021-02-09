@@ -1,5 +1,6 @@
 \documentclass[conference,compsoc]{IEEEtran}
 
+\raggedbottom
 \usepackage{comment}
 \usepackage{float}
 \usepackage[utf8]{inputenc}
@@ -39,15 +40,8 @@ linktocpage=true, % makes the page number as hyperlink in table of content
 % correct bad hyphenation here
 %\hyphenation{op-tical net-works semi-conduc-tor}
 
-
 \begin{document}
-%
-% paper title
-% Titles are generally capitalized except for words such as a, an, and, as,
-% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
-% not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
+
 \title{Fall Risk Reduction in Cognitively Impaired Elderly \\using Brain-Computer Interface: \\A Review}
 
 
@@ -67,7 +61,27 @@ Email: PingChen@liverpool.ac.uk}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Decades of research and experimental studies have investigated strategies to reduce older people fall risk. The electrophysiological signal, electroencephalogram (EEG),  is a strong basis of brain-computer interface (BCI) for clinical interpretation \cite{Panoulas_2010,Mane_2020}. EEG correlates with human intention \cite{Panoulas_2010}.
+Decades of research and experimental studies have investigated strategies to reduce older people fall risk. The electrophysiological signal, electroencephalogram
+(EEG),  is a strong basis of brain-computer interface (BCI) for clinical interpretation \cite{Panoulas_2010,Mane_2020}. EEG correlates with human intention \cite{Panoulas_2010}.\\
+Objective:The objective of this review is to determine how to use Brain-Computer-Interface 
+reducing the risk of fall on older people.\\
+Method: A systematic literature on the following database: EBSCOHost, IEEE, PubMed, CINAHL and MEDLINE; 
+Timeframe starting from 2010 to 2020;
+The search filter applied for fall risk assessment tools
+were (Fall* 
+	OR FALLING*)
+AND (Community Dwelling
+	OR Care home
+	OR Geriatric care OR care unit)
+AND (Risk
+	OR Risk Assessment
+	OR Fall Risk Factors)
+AND (Old*
+	OR Elderly
+	OR Older People
+	OR Ageing)
+AND Nurs*
+AND Fall Risk Factors.
 \end{abstract}
 
 \keywords{Brain Computer Interface, Cognitive function, fall risk assessment, motor rehabilitation}
@@ -83,13 +97,14 @@ Most BCI applications involves assistive technology that help the disabled peopl
 % a bit intro
 Falls in ageing population is a rising public health problem globally. People aged over 65 years are entitled to higher risk of unintentional fall than younger adults and children, leading to fall-related injuries or even as severe as death \cite{who_2012}. Among fall-experienced elderly, those who residing at home, geriatric patients and inpatients adults are the majority \cite{Jung_2014}. In addition to fall-induced immobility that limits their daily activity, falls pose negative psychosocial effects on elderly such as dependence and social isolation \cite{Scheffer_2008}. Falling injuries also requires clinical interventions, bringing high financial burden to their family. 
 % fall risk assessment
-To prevent fall of older people, World Health Organization (WHO) effective fall prevention strategies start by exploring variable risk factors and thus develop related healthcare training as well as safer environment to reduce the possibilities for falls \cite{who_2012}. 
+To prevent fall of older people, World Health Organization (WHO) suggested effective fall prevention strategies start by exploring variable risk factors and thus develop related healthcare training as well as safer environment to reduce the possibilities for falls \cite{who_2012}. 
 
-Risk factors for falling varies, hence fall risks assessment tools are widely studied and used for more efficient diagnosis for falls. The accuracy and validity of risk assessment tools should be either tested or supported by evidence before putting in use by patients. As early as 1981, one of the first fall risk assessment tool was established based on incident report data \cite{Oulton_1981}. Later, various assessment tool with quantitative indication of fall risk were developed such as Downton scale, the St. Thomas Risk Assessment Tool in falling elderly inpatients(STRATIFY, effective for acute hospital \cite{Perell_2001})(lists of tools reference see \cite{Aranda_Gallardo_2013}). In the last decade, most the emerging fall risk assessment tools were developed by retrospective case-control study to identify fall risk factors. These tools diverse across settings such as in the low-level care facility\cite{van_Schooten_2020}, geriatric care units\cite{Michalcova_2020} and acute care hospital \cite{Chiu_2014, Aryee_2017}. Other assessment tools are introduced by multi-factorial statistical approach that incorporate elders' gait performance and cognitive impairment to rate fall risks \cite{Kikkert_2017,Taylor_2018}. 
-The environment and human physical as well as mental status when fall prone to happen offers clues to specific factors for fall. Hence appropriate selection of risk assessment tool can lead to effective fall prevention intervention. \textbf{XXX number of the reviewed articles validated the tools, or supply literature evidence for the tools' reliability \cite{Myers_2003}}.
+Risk factors for falling varies, hence fall risks assessment tools are widely studied and used for more efficient diagnosis for falls. The accuracy and validity of risk assessment tools should be either tested or supported by evidence before putting in use by patients. As early as 1981, one of the first fall risk assessment tool was established based on incident report data \cite{Oulton_1981}. Later, various assessment tool with quantitative indication of fall risk were developed such as the Morse FALL Scale(MFS)\cite{Morse_1989}, the St. Thomas Risk Assessment Tool in falling elderly inpatients(STRATIFY) \cite{Oliver_1997}, Fall Risk Assessment Tool(FRAT) \cite{Nandy_2004}.
+%lists of tools reference see \cite{Aranda_Gallardo_2013}).
 
-Popular interventions for fall prevention strategies for older people includes living environmental modification, muscle strengthening training programme such as Tai-Chi exercises, and hiring assistive devices to treat impaired sensory functions \cite{who_2012}. (Do we need this section?)
-%BCI is to enhance neurological function is one of the intervention?
+The environmental settings of the fall event offers clues to specific factors for fall. Hence appropriate selection of risk assessment tool could reveal fall risks and lead to effective fall prevention intervention. In the last decade, many of the emerging fall risk assessment tools were evaluated by retrospective case-control study to identify fall risk factors for older people who are at higher risk of falling. The tools were applied diverse across settings such as in the low-level care facility\cite{van_Schooten_2020}, geriatric care units\cite{Michalcova_2020} and acute care hospital \cite{Chiu_2014, Aryee_2017}. Other novel assessment tools are introduced by multi-factorial statistical approach that incorporate elders' gait performance and cognitive impairment to rate fall risks \cite{Kikkert_2017,Taylor_2018}. An assessment tool may not be suitable for all the settings. For example, the fall risks and factors of older people staying in acute hospital should be assessed differently from those who dwellng in the care community. 
+% Gait and balance assessment
+In fact, evaluation of gait balance is a part of multifactorial fall risk assessment for the residents of community-residing older people \cite{PreventionofFalls2011}. In 2010, the American Geriatrics Society ad British Geriatrics recommend fall risk assessment for the older people above 65 who experienced a fall or had reported difficulties in gait or balance. Popular tests of gait balance includes Timed up and go (TUG) test, the Berg Balance Scale(BBS), and One-Legged Stance Test (OLST). 
 
 \subsection{Correlation between cognitive decline and risk fall (strong or loose)}
 \begin{comment}

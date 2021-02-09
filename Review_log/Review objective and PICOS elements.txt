@@ -1,0 +1,22 @@
+Review objective:
+The objective of this review is to determine how to use Brain-Computer-Interface 
+reduce the risk of fall on older people.
+
+Participants:
+Studies of participants(age 65+) diagnosed with mild cognitive impairment
+Studies of participants(age 65+) who experienced a single fall or had reported problem with 
+gait of balance
+Studies of participants(age 65+) dwelling in community, long-term care home, nursing home
+and geriatric care.
+
+Intervention:
+Fall risk assessment tools before intervention
+Brain-Computer-Interface neurofeedback treatment on cognitive diseases
+
+Outcomes:
+Identify and bridge the knowledge gap between cognitive function and risk of falls.
+Develop a method to use BCI for neurofeedback training for risk of fall reduction on elderly.
+
+Study design
+Cohort studies, controlled trails. Case series and case reports are excluded from the review 
+owing to the high potentialfor bias in these study designs. Case-control studies are also excluded
